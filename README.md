@@ -1,2 +1,2 @@
 # Pattern-programs
-Here are some pattern programs written in basic Java. I'll upgrade them as I make more progress in Java.
+Here are some pattern programs written in basic Java syntax. I'll update them as I make more progress in Java.
