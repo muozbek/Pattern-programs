@@ -2,7 +2,7 @@
  	Write the computer program that forms the shape below using n as 
         an input from the keyboard.
 
-	n = 10 ise >>  	*
+	n = 10 -->  	*
 			**
 			***
 			****
@@ -44,7 +44,7 @@ class App
 
 		for (i = n - 1; i >= 1; i = i - 1) {
 			for (k = 1; k <= i; k = k + 1)
-				System.out.print("*" + " ");
+				System.out.print("*");
 			System.out.println();
 		}
 	}
