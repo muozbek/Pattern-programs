@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------
+	Write the computer program that forms the shape using n as an input 
+	from the keyboard.
+
+	n = 5  -->  	* * * * * 
+ 			 * * * * 
+  			  * * * 
+   			   * * 
+    			    * 
+			   * * 
+			  * * * 
+			 * * * * 
+			* * * * * 
+-----------------------------------------------------------------------*/
+
+package csd;
+
+class App 
+{
+	public static void main(String [] args)
+	{
+		java.util.Scanner kb = new java.util.Scanner(System.in);
+		
+		int i, k, n;
+		
+		System.out.print("n?: ");
+		n = kb.nextInt();
+		
+		System.out.println();
+		
+		for (i = 1; i <= 2 * n - 1; i = i + 1) {
+			if (i <= n) {
+				for(k = 1; k <= i - 1 ; k = k + 1)
+					System.out.print(" ");
+				
+				for(k = 1; k <= n + 1 - i; k = k + 1)
+					System.out.print("*" + " ");
+				
+				System.out.println();
+			}
+			
+			else {
+				for(k = 1; k <= 2 * n - 1 - i; k = k + 1)
+					System.out.print(" ");
+				
+				for(k = 1; k <= i - n + 1; k = k + 1)
+					System.out.print("*" + " ");
+				
+				System.out.println(); 
+			}
+		} 	
+	}
+}
